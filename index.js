@@ -57,3 +57,5 @@ app.use("/api/comments", require("./routes/comments.route"))
 server.listen(5000, () => {
   console.log(`Server is listening at: 5000`);
 });
+
+module.exports = {app}
