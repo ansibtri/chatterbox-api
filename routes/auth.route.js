@@ -54,8 +54,12 @@ AuthRouter.post("/register", async (req, res) => {
       password: await bcrypt.hash(password, salt),
       ..._,
     });
+
+    console.log(createNewUser,_)
     // save the new user
     const savedNewUser = await createNewUser.save();
+
+    console.log(savedNewUser)
     // send response back to client
     return response(res, 200, "success", {
       message: "Account Created Successfully!!!",

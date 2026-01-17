@@ -1,10 +1,4 @@
-node_modules
-node_modules/*
 
-logs
-logs/*
-
-.env
 
 #Ignore vscode AI rules
 .github\instructions\codacy.instructions.md
